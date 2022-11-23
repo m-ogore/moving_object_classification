@@ -115,6 +115,7 @@ void loop() {
                 ei_printf("%s:\t%.5f\n", result.classification[ix].label, result.classification[ix].value);
                  oled.clear();
                  oled.set1X();
+                 oled.setCursor(50,18+(10*ix));
                  oled.print(result.classification[ix].label);
                  oled.print(result.classification[ix].value);
                
